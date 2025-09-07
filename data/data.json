@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "힐스테이트 둔산",
-    "description": "김포 한강신도시 프리미엄 주거공간",
+    "description": "대전 탄방동의 새로운 랜드마크 힐스테이트 둔산을 만나다",
     "contact": {
       "phone": "1833-9123",
       "hours": "오전 10시 - 오후 6시",
@@ -10,7 +10,7 @@
       "kakaoEnabled": false
     },
     "footer": {
-      "manager": "광고 : 유니컴퍼니 | 사업자등록번호 : 877-15-02004 | 고객센터 : 1833-9123",
+      "manager": "광고 : 유니컴퍼니 | 사업자등록번호 : 877-15-02004 | 고객센터 : 010-8369-6005",
       "description": "대전 탄방동의 새로운 랜드마크 힐스테이트 둔산을 만나다",
       "developer": "상현베스트개발 주식회사",
       "constructor": "현대건설",
@@ -28,10 +28,10 @@
     "subtitle": "대전을 대표하는 둔산라이프의 정점이 되다",
     "badge": "GRAND OPEN",
     "slideImages": [
-      "assets/images/hero/hillstate eye view.jpg",
-      "assets/images/hero/hillstate night eye view.jpg"
+      "assets/images/hero/hillstateeyeview.jpg",
+      "assets/images/hero/hillstatenighteyeview.jpg"
     ],
-    "backgroundImage": "assets/images/hero/hillstate eye view.jpg"
+    "backgroundImage": "assets/images/hero/hillstateeyeview.jpg"
   },
   "overview": {
     "items": [
@@ -57,8 +57,8 @@
       }
     ],
     "images": [
-      "assets/images/gaeyo/hillstate drone.jpg",
-      "assets/images/gaeyo/hillstate drone2.jpg"
+      "assets/images/gaeyo/hillstatedrone.jpg",
+      "assets/images/gaeyo/hillstatedrone2.jpg"
     ]
   },
   "design": {
@@ -104,7 +104,7 @@
   "location": {
     "title": "입지환경",
     "description": "대전 둔산동 중심, 프리미엄 입지라이프",
-    "image": "assets/images/ipzi/hillstate location.jpg",
+    "image": "assets/images/ipzi/hillstatelocation.jpg",
     "highlights": [
       {
         "icon": "🏫",
@@ -506,7 +506,7 @@
   },
   "options": {
     "title": "기본 제공 품목 안내",
-    "description": "김포 오퍼스 한강 스위첸의 프리미엄 기본 제공 품목",
+    "description": "힐스테이트 둔산의 프리미엄 기본 제공 품목",
     "visible": false,
     "categories": [
       {
@@ -676,50 +676,51 @@
     "visible": true,
     "showOverview": true,
     "showFloorplan": false,
-    "overviewImage": "assets/images/community/hillstate community.jpg",
-    "floorPlanImage": "assets/images/community/sub.jpg",
+    "overviewImage": "assets/images/community/hillstatecommunity.jpg",
+    "floorPlanImage": "assets/images/community/hillstatesauna.jpg",
     "facilities": [
       {
         "name": "피트니스 클럽",
         "description": "최첨단 시설의 프리미엄 피트니스",
-        "mainImage": "assets/images/community/hillstate fitness.jpg",
-        "image": "assets/images/community/hillstate fitness.jpg"
+        "mainImage": "assets/images/community/hillstatefitness.jpg",
+        "image": "assets/images/community/hillstatefitness.jpg"
       },
       {
         "name": "도서관",
         "description": "조용한 독서와 학습을 위한 공간",
-        "mainImage": "assets/images/community/hillstate library.jpg",
-        "image": "assets/images/community/hillstate library.jpg"
+        "mainImage": "assets/images/community/hillstatelibrary.jpg",
+        "image": "assets/images/community/hillstatelibrary.jpg"
       },
       {
         "name": "광장",
         "description": "주민들의 소통과 휴식을 위한 열린 공간",
-        "mainImage": "assets/images/community/hillstate lounge.jpg",
-        "image": "assets/images/community/hillstate lounge.jpg"
+        "mainImage": "assets/images/community/hillstatelounge.jpg",
+        "image": "assets/images/community/hillstatelounge.jpg"
       },
       {
         "name": "골프연습장",
         "description": "실내 골프 연습을 위한 전문 시설",
-        "mainImage": "assets/images/community/hillstate golf.jpg",
-        "image": "assets/images/community/hillstate golf.jpg"
+        "mainImage": "assets/images/community/hillstategolf.jpg",
+        "image": "assets/images/community/hillstategolf.jpg"
       },
       {
         "name": "학습공간",
         "description": "집중 학습을 위한 독립된 공간",
-        "mainImage": "assets/images/community/hillstate reading.jpg",
-        "image": "assets/images/community/hillstate reading.jpg"
+        "mainImage": "assets/images/community/hillstatereading.jpg",
+        "image": "assets/images/community/hillstatereading.jpg"
       },
       {
         "name": "사우나",
         "description": "지친 하루를 정화하고 피로를 푸는 공간",
-        "mainImage": "assets/images/community/hillstate sauna.jpg",
-        "image": "assets/images/community/hillstate sauna.jpg"
+        "mainImage": "assets/images/community/hillstatesauna.jpg",
+        "image": "assets/images/community/hillstatesauna.jpg"
       }
     ]
   },
   "qna": {
     "title": "자주 묻는 질문",
     "description": "궁금하신 점을 확인해보세요",
+    "visible": true,
     "items": [
       {
         "question": "힐스테이트 둔산의 위치는 어디죠?",

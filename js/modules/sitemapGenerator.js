@@ -48,7 +48,13 @@ export class SitemapGenerator {
     }
 
     generateRobotsTxt() {
-        const robotsTxt = `# robots.txt for ${window.siteData?.site?.title || '김포 오퍼스 한강 스위첸'}
+        // 프로젝트명을 여러 소스에서 가져오기 시도
+        const projectTitle = 
+            document.getElementById('site-title')?.value || // 관리자 패널에서 직접 가져오기
+            window.siteData?.site?.title || 
+            '김포 오퍼스 한강 스위첸';
+        
+        const robotsTxt = `# robots.txt for ${projectTitle}
 # Generated: ${new Date().toISOString().split('T')[0]}
 # Domain: ${this.baseUrl}
 
