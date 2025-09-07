@@ -1,6 +1,6 @@
 # robots.txt for 힐스테이트 둔산
 # Generated: 2025-09-07
-# Domain: https://hilllstate.n-e.kr
+# Domain: https://hilllstate.p-e.kr
 
 # 모든 검색엔진 봇 허용
 User-agent: *
@@ -32,7 +32,7 @@ Allow: /*.webp$
 Crawl-delay: 1
 
 # 사이트맵 위치
-Sitemap: https://hilllstate.n-e.kr/sitemap.xml
+Sitemap: https://hilllstate.p-e.kr/sitemap.xml
 
 # 주요 검색엔진별 설정
 # Googlebot
