@@ -12,16 +12,56 @@ export class SitemapGenerator {
         // 말단 슬래시 제거
         this.baseUrl = this.baseUrl.replace(/\/$/, '');
         
-        this.sections = [
-            { path: '', priority: '1.0', name: 'main' },
-            { path: '#overview', priority: '0.8', name: 'overview' },
-            { path: '#location', priority: '0.8', name: 'location' },
-            { path: '#floorplans', priority: '0.8', name: 'floorplans' },
-            { path: '#premium', priority: '0.7', name: 'premium' },
-            { path: '#convenience', priority: '0.7', name: 'convenience' },
-            { path: '#community', priority: '0.7', name: 'community' },
-            { path: '#contact', priority: '0.9', name: 'contact' }
+        // 활성화된 섹션만 포함
+        this.sections = this.getActiveSections();
+    }
+    
+    getActiveSections() {
+        const sections = [
+            { path: '', priority: '1.0', name: 'main' } // 메인은 항상 포함
         ];
+        
+        // 각 섹션의 visible 상태 확인
+        const sectionConfigs = [
+            { path: '#overview', priority: '0.8', name: 'overview', dataKey: 'overview' },
+            { path: '#design', priority: '0.8', name: 'design', dataKey: 'design' },
+            { path: '#location', priority: '0.8', name: 'location', dataKey: 'location' },
+            { path: '#floorplans', priority: '0.8', name: 'floorplans', dataKey: 'floorPlans' },
+            { path: '#premium', priority: '0.7', name: 'premium', dataKey: 'premium' },
+            { path: '#options', priority: '0.7', name: 'options', dataKey: 'options' },
+            { path: '#convenience', priority: '0.7', name: 'convenience', dataKey: 'convenience' },
+            { path: '#community', priority: '0.7', name: 'community', dataKey: 'community' },
+            { path: '#news', priority: '0.6', name: 'news', dataKey: 'news' },
+            { path: '#qna', priority: '0.6', name: 'qna', dataKey: 'qna' },
+            { path: '#contact', priority: '0.9', name: 'contact', dataKey: 'contact' }
+        ];
+        
+        // window.siteData가 있으면 visible 상태 확인
+        if (window.siteData) {
+            sectionConfigs.forEach(section => {
+                // 섹션 데이터가 있고 visible이 false가 아니면 포함
+                // contact는 항상 포함 (visible 속성 없음)
+                if (section.dataKey === 'contact' || 
+                    (window.siteData[section.dataKey] && 
+                     window.siteData[section.dataKey].visible !== false)) {
+                    sections.push({
+                        path: section.path,
+                        priority: section.priority,
+                        name: section.name
+                    });
+                }
+            });
+        } else {
+            // siteData가 없으면 기본 섹션만 포함
+            sections.push(
+                { path: '#overview', priority: '0.8', name: 'overview' },
+                { path: '#location', priority: '0.8', name: 'location' },
+                { path: '#floorplans', priority: '0.8', name: 'floorplans' },
+                { path: '#contact', priority: '0.9', name: 'contact' }
+            );
+        }
+        
+        return sections;
     }
 
     generateSitemapXML() {
