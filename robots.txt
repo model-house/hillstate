@@ -1,5 +1,5 @@
 # robots.txt for 힐스테이트 둔산
-# Generated: 2025-09-07
+# Generated: 2025-09-11
 # Domain: https://hilllstate.p-e.kr
 
 # 모든 검색엔진 봇 허용
